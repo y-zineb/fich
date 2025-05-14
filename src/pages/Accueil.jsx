@@ -5,7 +5,7 @@ import BannerImage from "../assets/home.png";
 
 function Accueil() {
   return (
-    <div className="home" style={{ backgroundImage: `url(${BannerImage})` }}>
+    <section id="home" style={{ backgroundImage: `url(${BannerImage})` }}>
       <div className="headerContainer">
         <h1>
           Bienvenue chez <span className="highlight">DO1</span>
@@ -14,11 +14,11 @@ function Accueil() {
           Un espace collaboratif pour innover, apprendre, et créer dans le
           domaine du <strong>génie logiciel</strong>.
         </p>
-        {/* <Link to="/À propos"> */}
+        <a href="#À propos">
           <button> Découvrir plus </button>
-        {/* </Link> */}
+        </a>
       </div>
-    </div>
+    </section>
   );
 }
 
